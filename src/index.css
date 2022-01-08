@@ -7,4 +7,5 @@
 body {
   background-image: linear-gradient(0, lightblue, darkblue);
   background-repeat: no-repeat;
+  font-family: "Libre Franklin", sans-serif;
 }

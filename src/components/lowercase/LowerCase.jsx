@@ -1,9 +1,13 @@
 import CustomButton from "../buttonstyling/ButtonStyling";
 
-function LowerCase() {
+function LowerCase({ func, textValue, buttonSetFunc }) {
+  const clickHandler = () => {
+    func(textValue.toLowerCase());
+    buttonSetFunc(true);
+  };
   return (
     <div>
-      <CustomButton>LowerCase</CustomButton>
+      <CustomButton onClick={clickHandler}>LowerCase</CustomButton>
     </div>
   );
 }

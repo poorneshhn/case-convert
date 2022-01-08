@@ -1,11 +1,11 @@
 import Header from "./header/Header";
 import TextArea from "./textarea/TextArea";
 
-function HeaderBodyComponent() {
+function HeaderBodyComponent({ func, textValue }) {
   return (
     <div>
       <Header />
-      <TextArea />
+      <TextArea func={func} textValue={textValue} />
     </div>
   );
 }

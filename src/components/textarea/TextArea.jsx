@@ -1,5 +1,5 @@
-import { useState } from "react";
 import styled from "styled-components";
+// import { useState, useEffect } from "react";
 
 const DivText = styled.div`
   width: 900px;
@@ -35,15 +35,13 @@ const Textarea = styled.textarea`
   }
 `;
 
-function TextArea() {
-  const [text, setText] = useState("");
-
+function TextArea({ func, textValue }) {
   return (
     <DivText>
       <Textarea
         placeholder="Type here..."
-        onChange={() => setText()}
-        value={text}
+        onChange={(e) => func(e.target.value)}
+        value={textValue}
       ></Textarea>
     </DivText>
   );
