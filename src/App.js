@@ -13,12 +13,10 @@ function App() {
 
   let time;
   useEffect(() => {
-    if (textValue.length > 1) {
-      clearTimeout(time);
-      time = setTimeout(() => {
-        setButtonClick(false);
-      }, 1500);
-    }
+    clearTimeout(time);
+    time = setTimeout(() => {
+      setButtonClick(false);
+    }, 1500);
   }, [buttonClick]);
 
   return (
