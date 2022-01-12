@@ -1,6 +1,6 @@
 import ButtonsComponent from "./components/ButtonsComponent";
 import HeaderBodyComponent from "./components/HeaderBodyComponent";
-import Popup from "./components/popup/Popup";
+// import Popup from "./components/popup/Popup";
 import { useState, useEffect } from "react";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <Popup buttonClick={buttonClick} />
+      {/* <Popup buttonClick={buttonClick} /> */}
       <HeaderBodyComponent func={updateText} textValue={textValue} />
       <ButtonsComponent
         func={updateText}
