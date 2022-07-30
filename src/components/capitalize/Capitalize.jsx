@@ -1,9 +1,8 @@
 import CustomButton from "../buttonstyling/ButtonStyling";
 
-function Capitalize({ textValue, func, buttonSetFunc }) {
+function Capitalize({ textValue, func }) {
   const clickHandler = () => {
     func(textValue.toUpperCase());
-    buttonSetFunc(true);
   };
 
   return (

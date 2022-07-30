@@ -10,17 +10,14 @@ const crazyFunc = (value) => {
   }
 };
 
-function CrazyCase({ func, textValue, buttonSetFunc }) {
+function CrazyCase({ func, textValue }) {
   const clickHandler = () => {
     let newValue = "";
 
     for (let i = 0; i < textValue.length; i++) {
       newValue = newValue + crazyFunc(textValue[i]);
     }
-
     func(newValue);
-
-    buttonSetFunc(true);
   };
 
   return (

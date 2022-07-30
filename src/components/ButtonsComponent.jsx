@@ -32,25 +32,13 @@ const StyledDiv = styled.div`
   }
 `;
 
-function ButtonsComponent({ textValue, func, buttonSetFunc }) {
+function ButtonsComponent({ textValue, func }) {
   return (
     <ContainerDiv>
       <StyledDiv>
-        <Capitalize
-          textValue={textValue}
-          func={func}
-          buttonSetFunc={buttonSetFunc}
-        />
-        <LowerCase
-          textValue={textValue}
-          func={func}
-          buttonSetFunc={buttonSetFunc}
-        />
-        <CrazyCase
-          textValue={textValue}
-          func={func}
-          buttonSetFunc={buttonSetFunc}
-        />
+        <Capitalize textValue={textValue} func={func} />
+        <LowerCase textValue={textValue} func={func} />
+        <CrazyCase textValue={textValue} func={func} />
       </StyledDiv>
     </ContainerDiv>
   );
